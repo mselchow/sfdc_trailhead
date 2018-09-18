@@ -6,7 +6,7 @@ public class StringArrayTest {
     // in numStrings.
     public static String[] generateStringArray(Integer numStrings) {
         // Result variable.
-        String[] results = new String[];
+        List<String> results = new List<String>();
 
         // Loop 'numStrings' times and add to results.
         for (Integer i = 0; i < numStrings; i++) {
