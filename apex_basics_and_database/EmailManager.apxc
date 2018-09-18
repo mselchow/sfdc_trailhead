@@ -17,7 +17,7 @@ public class EmailManager {
     }
 
     // Helper method
-    private static Boolean inspectResults(Messaging.SendEmailResults[] results) {
+    private static Boolean inspectResults(Messaging.SendEmailResult[] results) {
         Boolean sendResult = true;
 
         // sendEmail returns an array of result objects.
