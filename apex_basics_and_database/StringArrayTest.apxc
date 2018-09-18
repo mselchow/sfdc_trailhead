@@ -13,7 +13,7 @@ public class StringArrayTest {
             results.add('Test ' + i);
         }
 
-        // Return final string arary.
+        // Return final string array.
         return results;
     }
 }
