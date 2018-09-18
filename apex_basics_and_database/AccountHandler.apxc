@@ -1,0 +1,25 @@
+// Class created for Challenge 2
+// URL: https://trailhead.salesforce.com/modules/apex_database/units/apex_database_dml
+public class AccountHandler {
+
+    // Creates and returns an account with the arg 'name'
+    public static Account insertNewAccount(String name) {
+        // Create the account object, and set the Name = name.
+        Account acct = new Account(Name = name);
+
+        // Attempt to create 'acct' while catching any errors
+        try {
+            // Create the account
+            insert acct;
+        } catch (DmlException e) {
+            // Catch the exception, write to debug, return null
+            System.debug('A DML exception has occurred: ' + e.getMessage());
+            return null;
+        }
+
+        // If we made it through our try statement, we've succeeded!
+        // Return the created account
+        System.debug('Account \'' + acct.Name + '\' successfully inserted!');
+        return acct;
+    }
+}
