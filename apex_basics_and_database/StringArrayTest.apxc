@@ -1,0 +1,19 @@
+// Class used in Trailhead Challenge 1
+public class StringArrayTest {
+
+    // Generates a list of strings ('Test 0', 'Test 1', ...).
+    // This method will generate as many strings as indicated
+    // in numStrings.
+    public static String[] generateStringArray(Integer numStrings) {
+        // Result variable.
+        String[] results = new String[];
+
+        // Loop 'numStrings' times and add to results.
+        for (Integer i = 0; i < numStrings; i++) {
+            results.add('Test ' + i);
+        }
+
+        // Return final string arary.
+        return results;
+    }
+}
